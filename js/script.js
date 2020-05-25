@@ -6,21 +6,24 @@ var mailSingle;
 var mailUtente = prompt('Qual è la tua mail?');
 console.log(mailUtente);
 
-// Ipotesi
+// Ipotesi falsa
 var mailPresenza = false;
 
 // Controllo della lista
 for ( var i = 0; i < mail.length; i++ ) {
   // Se la sua mail è nella lista
   if( mail[i] == mailUtente ) {
-    // Vero
+    // Ipotesi vera
     mailPresenza = true;
   }
 }
 
-// Cosa stampare a schermo
+// Cosa stampare a schermo per le due opzioni
+// Ipotesi vera
 if ( mailPresenza ) {
   document.getElementById('accesso').innerHTML = 'Accesso consentito: Benvenuto!';
-} else {
+}
+// Ipotesi rimane falsa
+else {
   document.getElementById('accesso').innerHTML = 'Accesso negato.';
 }
