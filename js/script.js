@@ -4,6 +4,7 @@ var mailSingle;
 
 // Chiedo all'utente la sua mail
 var mailUtente = prompt('Qual è la tua mail?');
+console.log(mailUtente);
 
 // Ipotesi
 var mailPresenza = false;
@@ -15,10 +16,9 @@ for ( var i = 0; i < mail.length; i++ ) {
     // Vero
     mailPresenza = true;
   }
-  
-console.log();
+}
 
-// Cosa stampare a schermo nei due casi
+// Cosa stampare a schermo
 if ( mailPresenza ) {
   document.getElementById('accesso').innerHTML = 'Accesso consentito: Benvenuto!';
 } else {
