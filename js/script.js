@@ -29,11 +29,15 @@ else {
 }
 
 // DADI
+// Numeri Random
 var numeroUtente = Math.floor(Math.random() * 6) + 1;
 var numeroComputer = Math.floor(Math.random() * 6) + 1;
+
+// Numeri visibili su screen
 document.getElementById('numero-utente').innerHTML = numeroUtente;
 document.getElementById('numero-computer').innerHTML = numeroComputer;
 
+// Possibili output
 if ( numeroUtente > numeroComputer ) {
 document.getElementById('winner').innerHTML = 'Il vincitore è l	\'utente!';
 } else if ( numeroUtente < numeroComputer ) {
